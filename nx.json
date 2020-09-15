@@ -15,9 +15,17 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "accessToken": "ZTFmMjA0YTktYzZhYi00MjYwLTkyZWEtNmEzMDJjNjk1ZmFjfHJlYWQtd3JpdGU=",
+        "cacheableOperations": [
+          "build",
+          "test",
+          "lint",
+          "e2e"
+        ],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -27,7 +35,9 @@
     },
     "oregon-gun-trader-e2e": {
       "tags": [],
-      "implicitDependencies": ["oregon-gun-trader"]
+      "implicitDependencies": [
+        "oregon-gun-trader"
+      ]
     },
     "api": {
       "tags": []
